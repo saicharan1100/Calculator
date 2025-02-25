@@ -4,16 +4,29 @@ var cal="";
 var temp=0,final=0;
 var tempop='';
 var finalstr="";
+var c1=0;
 function display(a){
 if((a!='+')&&(a!='-')&&(a!='/')&&(a!='*')&&(a!='=')){
-cal+=a;}
+cal+=a;
+}
 else {
+
+
 if(a=='+'){
+   if(c1==0){
+      tempop=a;
+      final=Number(cal);
+      cal="";
+++c1;
+   }
+   else{
    tempop=a;
 temp=Number(cal);
    add(temp);
-   cal="";
+   cal="";}
 }
+
+
 else{
    if(tempop=='+'){
       temp=Number(cal);
@@ -26,6 +39,8 @@ cal=final;
    document.getElementById('Moutput').innerHTML=cal;
 
 }
+
+
 }
 
 
