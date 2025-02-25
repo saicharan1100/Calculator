@@ -46,10 +46,17 @@ else if(a=='-'){
    }
    else{
       if(cal.length!=0){
+         if(tempop=='+'){
+            tempop=a;
+            temp=Number(cal);
+            add(temp);
+         cal="";
+         }
+         else{
    tempop=a;
 temp=Number(cal);
    sub(temp);
-   cal="";}}
+   cal="";}}}
 }
 
 else{
