@@ -20,17 +20,49 @@ if(a=='+'){
 ++c1;
    }
    else{
+if(cal.length!=0){
+   if(tempop=='-'){
+      tempop=a;
+      temp=Number(cal);
+      sub(temp);
+   cal="";
+   }
+   else{
+      tempop=a;
+      temp=Number(cal);
+      add(temp);
+   cal="";
+   }
+}
+}
+}
+  
+else if(a=='-'){
+   if(c1==0){
+      tempop=a;
+      final=Number(cal);
+      cal="";
+++c1;
+   }
+   else{
+      if(cal.length!=0){
    tempop=a;
 temp=Number(cal);
-   add(temp);
-   cal="";}
+   sub(temp);
+   cal="";}}
 }
-
 
 else{
    if(tempop=='+'){
       temp=Number(cal);
       add(temp);
+      cal="";
+
+   }
+
+  else if(tempop=='-'){
+      temp=Number(cal);
+      sub(temp);
       cal="";
 
    }
@@ -76,3 +108,8 @@ function remlst(){
 function add(x){
 final+=x;
 }
+
+
+function sub(x){
+   final-=x;
+   }
