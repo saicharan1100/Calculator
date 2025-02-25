@@ -1,7 +1,34 @@
 document.getElementById('output').innerHTML=0;
-let dis="";
-
+var dis="";
+var cal="";
+var temp=0,final=0;
+var tempop='';
+var finalstr="";
 function display(a){
+if((a!='+')&&(a!='-')&&(a!='/')&&(a!='*')&&(a!='=')){
+cal+=a;}
+else {
+if(a=='+'){
+   tempop=a;
+temp=Number(cal);
+   add(temp);
+   cal="";
+}
+else{
+   if(tempop=='+'){
+      temp=Number(cal);
+      add(temp);
+      cal="";
+
+   }
+console.log(final);
+cal=final;
+   document.getElementById('Moutput').innerHTML=cal;
+
+}
+}
+
+
    dis+=a;
    document.getElementById('output').innerHTML=dis;
 }
@@ -28,4 +55,9 @@ function remlst(){
       document.getElementById('output').innerHTML=dis;
    }
  
+}
+
+
+function add(x){
+final+=x;
 }
