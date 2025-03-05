@@ -14,18 +14,24 @@
 
 </head>
 <body>
-  <div class="inp">
-    <h1>Input:</h1>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+    <label for="floatingTextarea">Input</label>
   </div>
-  <div class="otp">
-    <h1>Output:</h1>
-    <textarea class="form-control" id="opt" rows="1"></textarea>
+  <div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="opt"></textarea>
+    <label for="floatingTextarea">Output</label>
   </div>
   
  
  
-  <div class="container mb-5">
+  <div class="container ">
+    <div class="row">
+      <div class="col" onclick="alclr()">AC</div>
+      <div class="col" onclick="display( '(' )">(</div>
+      <div class="col" onclick="display(')')">)</div>
+      <div class="col" onclick="del()"><i class="fa-solid fa-delete-left"></i></div>
+    </div>
     
     <div class="row">
       <div class="col" onclick="display(7)">7</div>
