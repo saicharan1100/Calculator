@@ -1,12 +1,19 @@
-.container{
-    border: 5px solid red;
+.container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
    
-}
-.col{
-
-    background-color: blue;
-    color: white;
-    text-align: center;
-    border: 1px solid;
     
 }
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    border: 1px solid;
+    height: 100px;
+    cursor: pointer; 
+}
+
