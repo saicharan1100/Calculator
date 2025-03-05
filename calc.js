@@ -3,17 +3,11 @@ var str="";
 function display(a){
    if(a != '='){
       str+=a;
-      document.getElementById('di').innerHTML=str;
+      document.getElementById('exampleFormControlTextarea1').innerHTML=str;
    }
    else{
      
-      str+=a;
-      document.getElementById('di').innerHTML=str;
-      str=str.substring(0,str.length-1);
-     
-      
-
-      document.getElementById('opt').innerHTML= eval(str);
+      document.getElementById('opt').innerHTML= a+eval(str);
 
    }
 
