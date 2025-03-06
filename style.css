@@ -1,4 +1,5 @@
 
+
 .col{
     display: flex;
     align-items: center;
@@ -8,6 +9,7 @@
     border: 1px solid;
     height: 100px;
     cursor: pointer; 
+
 }
 .otp{
     display: flex;
@@ -15,4 +17,16 @@
 .inp{
     display: flex;
 
+}
+
+footer {
+    background: #2c3e50; /* Dark navy for contrast */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
