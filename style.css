@@ -9,7 +9,10 @@
     border: 1px solid;
     height: 100px;
     cursor: pointer; 
-
+    transition: transform 0.2s ease-in-out;
+}
+.col:active {
+    transform: scale(0.9);
 }
 .otp{
     display: flex;
