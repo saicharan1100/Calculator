@@ -41,6 +41,7 @@ document.getElementById('floatingTextarea').innerHTML=str;
       document.getElementById('opt').innerHTML= a+result;
       }
       catch(error){
+         alert("Invalid input");
          document.getElementById('opt').innerHTML= "Invalid input";
 
       }
